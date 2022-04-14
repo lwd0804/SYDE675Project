@@ -1,7 +1,7 @@
 # Swin Transformer Reproducibility
 
 We use the official code (https://github.com/microsoft/Swin-Transformer) of the "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows", to reproduce the image classification of the three variants in the original paper and added hyperparameter comparison experiments, ablation experiments, and self-attention module improvement experiments.
-
+We use Intel Image Classification Dataset(https://www.kaggle.com/datasets/puneet6060/intel-image-classification) which contains around 25k images of size 150x150 distributed under 6 categories. There are around 14k images in training set, 3k in test set.
 Among them, the hyperparameter comparison experiment includes learning rate comparison and batch size comparison, mainly to modify the config.py provided by the original author. The codes are contained in "hyperparameter comparison" folder. Replace the original "config.py" in the authors' code with the files in the "hyperparameter comparison" folder to test the performance of the network with different hyperparameters. The other setups are the same as the official implementation of the Swin Transformer. 
 
 For the ablation experiments, we remove the position embedding module, shifted window module, residual architecture, and dropout module, to testify the importance of each component. 
