@@ -14,7 +14,7 @@ For the improvement of the self-attention module, we reproduce three self-attent
 
 We also try to use two traditional machine learning methods(KNN, Logistic Regression) to do the image classification task. However, the accuracy is much lower than using swin transformer, the code can be seen in "Machine learning" folder.
 
-All the result of the experiments can be found in "figures" folder.
+All the results of the experiments can be found in "figures" folder.
 
 
 # Citing Swin Transformer
